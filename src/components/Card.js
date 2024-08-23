@@ -1,19 +1,22 @@
 import React from 'react';
 import Carousel from './Carousel.css'
 
-export default function Card() {
+export default function Card(props) {
+  
+  let options = props.options;
+  let priceOptions = Object.keys(options)
   return (
     <div className="d-flex justify-content-start">
       <div className="card mt-3" style={{ width: "18rem", maxHeight: "360px" }}>
         <img
-          src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={props.imgSrc}
           className="card-img-top"
           alt="..."
           style={{ height: "150px", objectFit: "cover" }} // Adjust image height
         />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">Let's write small text</p>
+          <h5 className="card-title">{props.foodName}</h5>
+          
           <div className='container w-100'>
             <div className="row">
               <div className="col">
@@ -25,8 +28,10 @@ export default function Card() {
               </div>
               <div className="col">
                 <select className="form-select m-2 bg-success">
-                  <option value="half">Half</option>
-                  <option value="full">Full</option>
+                  {priceOptions.map((data) => {
+                    return <option key={data} value= {data}>{data}</option>
+                  }
+                  )}
                 </select>
               </div>
             </div>

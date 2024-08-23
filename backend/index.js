@@ -19,6 +19,7 @@ app.use(express.json());
 // Route for creating a user
 const createUserRoutes = require('./Routes/CreateUser');
 app.use('/api', createUserRoutes);
+app.use('/api', require("./Routes/DisplayData"));
 
 app.get('/', (req, res) => {
   res.send('Hello World!------');
