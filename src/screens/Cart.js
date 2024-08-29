@@ -21,7 +21,7 @@ export default function Cart() {
             return;  // Optionally, you can show an alert to the user or redirect them to the login page.
         }
     
-        let response = await fetch("http://localhost:5000/api/orderData", {
+        let response = await fetch("https://pulse-fooddelivery.onrender.com/api/orderData", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
