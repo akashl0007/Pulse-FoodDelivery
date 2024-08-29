@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Pulse-FoodDelivery/static/css/main.ee70bdb8.css",
+    "main.js": "/Pulse-FoodDelivery/static/js/main.0a514e2e.js",
+    "static/js/787.7fe0dfbc.chunk.js": "/Pulse-FoodDelivery/static/js/787.7fe0dfbc.chunk.js",
+    "static/media/f1.jpeg": "/Pulse-FoodDelivery/static/media/f1.d99712d5bf2ba2fff889.jpeg",
+    "static/media/f3.jpeg": "/Pulse-FoodDelivery/static/media/f3.3ffa2999e25065465a0b.jpeg",
+    "static/media/f2.jpeg": "/Pulse-FoodDelivery/static/media/f2.a98f09e09d518dc9cffe.jpeg",
+    "index.html": "/Pulse-FoodDelivery/index.html",
+    "main.ee70bdb8.css.map": "/Pulse-FoodDelivery/static/css/main.ee70bdb8.css.map",
+    "main.0a514e2e.js.map": "/Pulse-FoodDelivery/static/js/main.0a514e2e.js.map",
+    "787.7fe0dfbc.chunk.js.map": "/Pulse-FoodDelivery/static/js/787.7fe0dfbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee70bdb8.css",
+    "static/js/main.0a514e2e.js"
+  ]
+}
