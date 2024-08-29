@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Pulse-FoodDelivery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Pulse-FoodDelivery** is a comprehensive food delivery web application built with the MERN stack. This project provides a user-friendly platform for food ordering and delivery, featuring a responsive design and intuitive interface for both users and administrators.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Secure login and registration functionality, allowing users to create accounts and access their personal information.
+- **Dynamic Menu**: Browse a variety of food items with detailed descriptions, prices, and images.
+- **Shopping Cart**: Add food items to the cart, adjust quantities, and review your order before checkout.
+- **Order Management**: Place orders, view order history, and track the status of ongoing orders.
+- **Admin Panel**: Manage the food menu, update item details, and handle order processing efficiently.
+- **Responsive Design**: Optimized for both desktop and mobile devices to ensure a smooth user experience across various screen sizes.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**:
+  - **React**: JavaScript library for building user interfaces.
+  - **React Router**: For handling routing and navigation within the application.
+  - **Redux**: State management library to handle application state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Backend**:
+  - **Node.js**: JavaScript runtime for building the server-side logic.
+  - **Express**: Web application framework for Node.js to handle HTTP requests and routing.
 
-### `npm test`
+- **Database**:
+  - **MongoDB**: NoSQL database for storing user and order data, food menu items, and other relevant information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Deployment**:
+  - **Netlify**: Hosting service for deploying the frontend React application.
+  - **Render**: Cloud platform for hosting and managing the backend server.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started with this project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/akashl0007/Pulse-FoodDelivery.git
+   cd Pulse-FoodDelivery
