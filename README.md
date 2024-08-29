@@ -11,6 +11,15 @@
 - **Admin Panel**: Manage the food menu, update item details, and handle order processing efficiently.
 - **Responsive Design**: Optimized for both desktop and mobile devices to ensure a smooth user experience across various screen sizes.
 
+## Encryption Methods
+
+To ensure the security of user passwords, the application uses the following encryption methods:
+
+- **Bcrypt**: Passwords are hashed using the `bcrypt` library. `bcrypt` provides a secure way to hash passwords and includes a salt to protect against rainbow table attacks. The hashing process involves the following steps:
+  1. **Salting**: Generates a random salt for each password.
+  2. **Hashing**: Combines the password with the salt and hashes the result.
+  3. **Storing**: The hashed password is stored in the database.
+     
 ## Tech Stack
 
 - **Frontend**:
