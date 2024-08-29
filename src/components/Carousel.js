@@ -23,7 +23,7 @@ export default function CustomCarousel({ search, setSearch }) {
                                     value={search}
                                     onChange={(e) => setSearch(e.target.value)} 
                                 />
-                                <button className="btn btn-outline-success" type="submit">Search</button>
+                                {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
                             </form>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ export default function CustomCarousel({ search, setSearch }) {
                         <div className="search-overlay">
                             <form className="d-flex">
                                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success" type="submit">Search</button>
+                                {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
                             </form>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ export default function CustomCarousel({ search, setSearch }) {
                         <div className="search-overlay">
                             <form className="d-flex">
                                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success" type="submit">Search</button>
+                                {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
                             </form>
                         </div>
                     </div>

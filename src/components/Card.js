@@ -19,15 +19,13 @@ export default function Card(props) {
     let existingFoodItem = data.find((item) => item.id === foodItem._id && item.size === size);
 
     if (existingFoodItem) {
-      // If the item with the same size exists, update its quantity and price
       await dispatch({
         type: "UPDATE",
         id: foodItem._id,
-        price: finalPrice + existingFoodItem.price, // Update price by adding current final price
-        qty: existingFoodItem.qty + qty // Update quantity by adding current qty
+        price: finalPrice + existingFoodItem.price,
+        qty: existingFoodItem.qty + qty
       });
     } else {
-      // If the item or size doesn't exist, add it to the cart
       await dispatch({
         type: "ADD",
         id: foodItem._id,
@@ -40,7 +38,7 @@ export default function Card(props) {
     }
   };
 
-  let finalPrice = qty * parseInt(options[size]); // Calculate final price based on selected quantity and size
+  let finalPrice = qty * parseInt(options[size]);
 
   useEffect(() => {
     setSize(priceRef.current.value || priceOptions[0] || "");
@@ -62,9 +60,10 @@ export default function Card(props) {
             <div className="row">
               <div className="col">
                 <select
-                  className="form-select m-2 bg-success rounded"
+                  className="form-select m-2 rounded"
                   onChange={(e) => setQty(Number(e.target.value))}
                   value={qty}
+                  style={{ backgroundColor: "#2a9d8f", color: "white" }}  // Button color
                 >
                   {Array.from({ length: 6 }, (_, i) => (
                     <option key={i + 1} value={i + 1}>
@@ -75,10 +74,11 @@ export default function Card(props) {
               </div>
               <div className="col">
                 <select
-                  className="form-select m-2 bg-success rounded"
+                  className="form-select m-2 rounded"
                   ref={priceRef}
                   onChange={(e) => setSize(e.target.value)}
                   value={size}
+                  style={{ backgroundColor: "#2a9d8f", color: "white" }}  // Button color
                 >
                   {priceOptions.map((option) => (
                     <option key={option} value={option}>
@@ -93,7 +93,11 @@ export default function Card(props) {
             </div>
           </div>
           <hr />
-          <button className="btn btn-success justify-center ms-2" onClick={handleAddToCart}>
+          <button 
+            className="btn justify-center ms-2" 
+            onClick={handleAddToCart} 
+            style={{ backgroundColor: "#2a9d8f", color: "white" }}  // Button color
+          >
             Add to Cart
           </button>
         </div>

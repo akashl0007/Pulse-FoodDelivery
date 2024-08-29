@@ -5,8 +5,8 @@ const Order = require('../models/Orders');
 router.post('/orderData', async (req, res) => {
     const { email, order_data, order_date } = req.body;
 
-    console.log("UserEmail:", email);
-console.log("Order Data:", order_data);
+//     console.log("UserEmail:", email);
+// console.log("Order Data:", order_data);
 
 
     if (!email) {
@@ -34,6 +34,15 @@ console.log("Order Data:", order_data);
     } catch (error) {
         console.error("Server Error:", error.message);
         return res.status(500).send("Server Error: " + error.message);
+    }
+});
+
+router.post('/myorderData', async (req, res) => {
+    try{
+        let myData = await Order.findOne({'email': req.body.email});
+        res.json({orderData: myData})
+    }catch(error){
+        res.send("Server Error", error.message);
     }
 });
 
