@@ -20,7 +20,7 @@ app.use(express.json());
 const createUserRoutes = require('./Routes/CreateUser');
 app.use('/api', createUserRoutes);
 app.use('/api', require("./Routes/DisplayData"));
-
+app.use('/api', require("./Routes/OrderData"));
 app.get('/', (req, res) => {
   res.send('Hello World!------');
 });
