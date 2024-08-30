@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Signup() {
   const [credentials, setCredentials] = useState({
@@ -8,6 +8,8 @@ export default function Signup() {
     password: '',
     geolocation: ''
   });
+  
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
@@ -32,6 +34,9 @@ export default function Signup() {
 
     if (!json.success) {
       alert('Enter valid credentials.');
+    } else {
+      // Redirect to login page
+      navigate('/login');
     }
   };
 
